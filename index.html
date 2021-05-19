@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&display=swap" rel="stylesheet">
+
+    <title>Calculator calories</title>
+</head>
+<body>
+    <article class="calculator_calories">
+        <div class="container">
+            <h2 class="title">Рассчитаем вашу потребность в калориях?
+            </h2>
+            <div class="calculating__field">
+                <p class="calculating__subtitle">Ваш пол</p>
+                <div class="calculating__choose" id="gender">
+                    <div class="choose_box">
+                        <p class="calculating__choose-item  gender__item calculating__choose-item_active" id = "female">Женщина</p>
+                        <p class="calculating__choose-item  gender__item" id = "male">Мужчина</p>
+                    </div>
+                </div>
+
+                <p class="calculating__subtitle">
+                    Ваша конституция
+                </p>
+                <div class="calculating__choose calculating__choose_medium">
+                    <input class="calculating__choose-item  input" type="number" id="height" placeholder="Введите рост" >
+                    <input class="calculating__choose-item  input" type="number" id="weight" placeholder="Введите вес" >
+                    <input class="calculating__choose-item  input" type="number" id="age" placeholder="Введите возраст">
+                </div>
+
+                <p class="calculating__subtitle">
+                    Выберите вашу физическая активность
+                </p>
+                <div class="calculating__choose calculating__choose_big">
+                    <p id="low" class="calculating__choose-item  ratio" data-ratio="1.2">Низкая активность </p>
+                    <p id="small"  class="calculating__choose-item calculating__choose-item_active  ratio" data-ratio="1.375">Невысокая активность</p>
+                    <p id="medium" class="calculating__choose-item  ratio" data-ratio="1.55">Умеренная активность</p>
+                    <p id="high" class="calculating__choose-item  ratio" data-ratio="1.725">Высокая активность</p>
+                </div>
+
+                <div class="calculating__divider"></div>
+
+                <div class="calculating__total">
+                    <p class="calculating__subtitle subtitle__total">
+                        Ваша суточная норма калорий:
+                    </p>
+                    <p class="calculating__result">
+                        <span class="calculating__result_number">2700</span> ккал
+                    </p>
+                </div>
+            </div>
+        </div><!--container-->
+    </article>
+
+    <script src="script.js"></script>
+</body>
+</html>
